@@ -1,0 +1,10 @@
+<project name="Visio" default="jar" basedir=".">
+	<property file="build.properties"/>
+	<property file="${user.home}/build.properties"/>
+	<property name="jar.name" value="visio"/>
+	<property name="jar.version" value="0.0.1"/>
+
+	<target name="jar" depends="" description="Builds jar file in dist">
+		<jar basedir="bin" destfile="dist/${jar.name}-${jar.version}.jar"/>
+	</target>
+</project>
